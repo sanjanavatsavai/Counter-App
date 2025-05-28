@@ -1,0 +1,88 @@
+/* Counter.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* New background with gradient for a soft look */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.counter-heading {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.counter-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.count-display {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  flex: 1 1 auto;
+  min-width: 100px;
+}
+
+.increment {
+  background-color: #2b5dff;
+}
+
+.decrement {
+  background-color: #ff4d4f;
+}
+
+.reset {
+  background-color: #888;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .counter-card {
+    padding: 20px;
+  }
+
+  .btn {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+}
